@@ -15,11 +15,16 @@ class App extends Component {
           1.修改了 <code>logo.svg</code>
           2.写了一个涟漪效果的 <code>Button</code> 组件   
         </pre>
-        <Button value='涟漪'/>
+        <Button onClick={this.z.bind(this)} value='涟漪'/>
         <Button value='效果'/>
         <Button value='Button'/>
       </div>
     );
+  }
+  z(e){
+    console.log('APP:我是调用Button组件的的App')
+    console.log('APP:这是 Button 组件里面的 button 被点击后传过来东西:',e );
+    
   }
 }
 

@@ -31,6 +31,8 @@ class Button extends Component {
         deltaX:deltaX,
         deltaY:deltaY
       })
+      console.log('Button:我被点击了哦')
+      this.props.onClick && this.props.onClick.call(null,'你好我是里面的Button')
       
   }
   y(){
