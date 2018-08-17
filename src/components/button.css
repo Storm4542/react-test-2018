@@ -1,0 +1,37 @@
+.btn{
+    padding: 4px 1em;
+    background-color: #ddd;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.btn:focus{
+    outline: none;
+    border-color: black
+}
+.btn>.value{
+    position: relative;
+    z-index: 1
+}
+.btn>.circle{
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: black;
+    opacity: .5;
+    animation: .8s big;
+    z-index: 0;
+}
+@keyframes big{
+    0%{
+        transform: scale(0.1)
+    }
+    100%{
+        transform: scale(10)
+    }
+}
